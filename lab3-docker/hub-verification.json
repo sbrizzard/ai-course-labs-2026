@@ -1,0 +1,10 @@
+{
+  "account": "sbrizzard",
+  "image": "sbrizzard/sxh241820001-lab3:v1",
+  "digest": "sha256:32269f8e267aa0fda528088fe7458762591c5b541b912844fd088917719cdfba",
+  "url": "https://hub.docker.com/r/sbrizzard/sxh241820001-lab3",
+  "push_verified": true,
+  "remote_digest_verified": true,
+  "pull_verified": true,
+  "pulled_image_run_verified": true
+}

@@ -3,7 +3,7 @@
 孙晞皓（241820001）的课程实验项目。AI辅助编写，实际运行于本机Ubuntu WSL和Docker。
 
 - lab2-task-manager：学习任务管理器，3项测试通过。
-- lab3-docker：Python Web、Nginx、持久化数据、MongoDB与Mongo Express Compose；Docker Hub上传待账号。
+- lab3-docker：Python Web、Nginx、持久化数据、MongoDB与Mongo Express Compose；Docker Hub镜像已上传，远程摘要、拉取与运行验证通过。
 - lab4-debug：故障复现、OpenCode与MCP修复、8项测试通过；项目规则与自定义Skill均保留。
 - lab5-langchain：3个工具、流式对话、SQLite记忆、Trim Middleware、Pydantic输出；6轮真实结果见demo_results.json。
 
