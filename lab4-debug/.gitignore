@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+.pytest-temp/
+.opencode/node_modules/
+.opencode/package.json
+.opencode/bun.lock

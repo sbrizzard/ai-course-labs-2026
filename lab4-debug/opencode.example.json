@@ -1,0 +1,47 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "local/qwen3-lab",
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Local Ollama",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama"
+      },
+      "models": {
+        "qwen3-lab": {
+          "name": "Qwen3 Lab",
+          "limit": {
+            "context": 16384,
+            "output": 4096
+          }
+        }
+      }
+    }
+  },
+  "permission": {
+    "read": "allow",
+    "edit": "allow",
+    "bash": {
+      "*": "ask",
+      "python*": "allow",
+      ".venv/bin/python*": "allow",
+      "ls*": "allow",
+      "pwd*": "allow",
+      "rm *": "deny"
+    },
+    "skill": "allow"
+  },
+  "mcp": {
+    "project": {
+      "type": "local",
+      "command": [
+        ".venv/bin/python",
+        "mcp_server.py"
+      ],
+      "enabled": true
+    }
+  },
+  "snapshot": false
+}

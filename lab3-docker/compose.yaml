@@ -1,0 +1,26 @@
+services:
+  mongodb:
+    image: mongo:8.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: labadmin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:?Set MONGO_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  mongo-express:
+    image: mongo-express:1.0.2
+    ports:
+      - "127.0.0.1:18081:8081"
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://labadmin:${MONGO_PASSWORD}@mongodb:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: labviewer
+      ME_CONFIG_BASICAUTH_PASSWORD: ${WEB_PASSWORD:?Set WEB_PASSWORD}
+    depends_on:
+      mongodb:
+        condition: service_healthy
+volumes:
+  mongo_data:

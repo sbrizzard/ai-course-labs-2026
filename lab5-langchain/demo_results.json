@@ -1,0 +1,72 @@
+{
+  "replies": [
+    {
+      "answer": "已记住：姓名孙晞皓，学号241820001，学习实验2到5。",
+      "action": "chat",
+      "next_step": "无"
+    },
+    {
+      "answer": "我叫孙晞皓，学号是241820001。",
+      "action": "lookup",
+      "next_step": "无"
+    },
+    {
+      "answer": "总费用是40.50元。",
+      "action": "calculation",
+      "next_step": "无"
+    },
+    {
+      "answer": "相差3天。",
+      "action": "calculation",
+      "next_step": "无"
+    },
+    {
+      "answer": "Docker的基本概念：镜像是模板，容器是运行实例，Volume 持久保存数据，Compose 编排多个服务。",
+      "action": "lookup",
+      "next_step": "无"
+    },
+    {
+      "answer": "1. 确认实验要求和提交截止日期。 2. 按照实验步骤完成报告撰写。 3. 检查格式与内容，提交报告。",
+      "action": "plan",
+      "next_step": "无"
+    }
+  ],
+  "memory_events": [
+    {
+      "before": 1,
+      "sent_to_model": 1
+    },
+    {
+      "before": 3,
+      "sent_to_model": 3
+    },
+    {
+      "before": 5,
+      "sent_to_model": 5
+    },
+    {
+      "before": 7,
+      "sent_to_model": 7
+    },
+    {
+      "before": 9,
+      "sent_to_model": 9
+    },
+    {
+      "before": 11,
+      "sent_to_model": 11
+    },
+    {
+      "before": 13,
+      "sent_to_model": 13
+    },
+    {
+      "before": 15,
+      "sent_to_model": 13
+    },
+    {
+      "before": 17,
+      "sent_to_model": 13
+    }
+  ]
+}

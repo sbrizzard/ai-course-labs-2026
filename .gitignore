@@ -1,0 +1,9 @@
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.pytest-temp/
+**/.env
+**/tasks.json
+**/checkpoints.sqlite*
+**/opencode.json
